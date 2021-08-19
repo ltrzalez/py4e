@@ -124,7 +124,7 @@ Ejercicio 1: Reescribe el programa del cálculo del salario para darle al emplea
 
 Introduzca las Horas: 45
 Introduzca la Tarifa por hora: 10
-Salario: 475.0
+Salario: 475.0 a dasd 
 
 Ejercicio 2: Reescribe el programa del salario usando try y except, de modo que el
 programa sea capaz de gestionar entradas no numéricas con elegancia, mostrando
