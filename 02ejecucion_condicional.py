@@ -1,5 +1,5 @@
 
-# *condicional todo hacer los pptx de estos ejemplos y agregar ejercicio. ejercicios de este capitulo seran utilizados en el proximo
+# *condicional
 
 # """ Ejecucion condicional """
 """ usaremos la palabra reservada if, elif, para que python tome 'decisiones'
