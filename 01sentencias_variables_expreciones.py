@@ -145,14 +145,26 @@ Escriba un programa que pregunta al usuario un piso en europa y responda que pis
 *pensa que todo programa basicamente es input -> proceso -> output.
 podes escribir una linea para cada paso, para resolver este ejercicio
 
+# piso_europa = int(input('Ingrese piso: '))
+# print(piso_europa + 1)
 
 Ejercicio 6 calculadora de parking
 pregunta al usuario horas y costo de la hora, el programa debe responder el total en formato "Costo: total"
 You should use input to read a string and float() to convert the string to a number.
 Do not worry about error checking or bad user data.
 
+# horas = float(input("Cuantas horas?: "))
+# costo = float(input("A que precio?: "))
+# total = horas * costo
+
+
+# print("Pagar:", str(total))
+
 Ejercicio 7: Escribe un programa que le pida al usuario una temperatura
 en grados Celsius, la convierta a grados Fahrenheit e imprima
 por pantalla la temperatura convertida.
 
 """
+temp_c = float(input('Ingrese una temperatura: '))
+temp_f = ((temp_c) * 1.8 + 32)
+print(temp_f)

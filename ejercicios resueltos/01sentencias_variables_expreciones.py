@@ -33,24 +33,24 @@ tipo (del valor de la expresión).
 4. 1 + 2 * 5 int
 Usa el intérprete de Python para comprobar tus respuestas.
 """
-ancho = 17
-alto = 12.0
-print(type(ancho))
-print(type(alto))
+# ancho = 17
+# alto = 12.0
+# print(type(ancho))
+# print(type(alto))
 
-a = ancho / 2
-b = ancho / 2.0
-c = alto / 3
-d = 1 + 2 *5
+# a = ancho / 2
+# b = ancho / 2.0
+# c = alto / 3
+# d = 1 + 2 *5
 
-print(a)
-print(type(a))
-print(b)
-print(type(b))
-print(c)
-print(type(c))
-print(d)
-print(type(d))
+# print(a)
+# print(type(a))
+# print(b)
+# print(type(b))
+# print(c)
+# print(type(c))
+# print(d)
+# print(type(d))
 
 
 
@@ -62,6 +62,8 @@ Escriba un programa que pregunta al usuario un piso en europa y responda que pis
 podes escribir una linea para cada paso, para resolver este ejercicio
 """
 # lo tengo 
+# piso_europa = int(input('Ingrese piso: '))
+# print(piso_europa + 1)
 
 
 """
@@ -77,7 +79,7 @@ Do not worry about error checking or bad user data.
 # total = horas * tarifa
 
 # print("Pay: " + str(total))
-#print("Pay:", str(total))
+# print("Pay:", str(total))
 
 """
 Ejercicio 7: Escribe un programa que le pida al usuario una temperatura

@@ -126,6 +126,7 @@ Introduzca las Horas: 45
 Introduzca la Tarifa por hora: 10
 Salario: 475.0 a dasd 
 
+
 Ejercicio 2: Reescribe el programa del salario usando try y except, de modo que el
 programa sea capaz de gestionar entradas no numéricas con elegancia, mostrando
 un mensaje y saliendo del programa. A continuación se muestran dos ejecuciones
@@ -144,3 +145,16 @@ está entre 0.0 y 1.0, muestra la calificación usando la tabla siguiente:
 
 
 """
+precio = 10
+precio_ex = 15
+
+try:
+    horas = int(input('Ingrese cantidad de horas: '))
+ 
+
+    if horas > 40:
+        print((horas - 40) * precio_ex)
+    else:
+        print((horas)*(precio))
+except:
+    print('Introduzca un numero por favor')         
