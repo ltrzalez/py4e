@@ -33,7 +33,7 @@ pass => sigue el flujo de ejecucion
 
 # while True:
 #     entrada = input('> ')
-#     if entrada == 'fin'
+#     if entrada == 'fin':
 #         break
 #     print(entrada)
 # print('fin')
@@ -54,7 +54,7 @@ pass => sigue el flujo de ejecucion
 #     print(i)
 # print('fin')
 
-# amigos = ['choco', 'mano', 'belu']
+# amigos = ['cadabra']
 # for amigo in amigos:
 #     print('hola ' + amigo)
 
@@ -103,7 +103,7 @@ tenes ejemplo de contar y sumar el valor total. Crea uno para obtener el promedi
 # filtrando dentro del loop para buscar un cosa o algun patron. TO DO exportar la funcion de las notas de los alumnos
 
 # menor = None
-# for value in [21,35,32,5,123,4] :
+# for value in [21,35,32,3,5,123,4] :
 #     if menor is None :
 #         menor = value
 #     elif value < menor:
@@ -124,8 +124,31 @@ esos números. Si el usuario introduce cualquier otra cosa que no sea un
 número, detecta su fallo usando try y except, muestra un mensaje de
 error y pasa al número siguiente.
 
+
 Ejercicio 2: Escribe otro programa que pida de a un numero, que al recibir "done" termine el programa,
 que responda "invalid input" cuando no sea un numero y muestre por pantalla el máximo y mínimo de los
 números.
 
 """
+num = 0
+suma = 0
+media = 0
+try:
+    while True:
+        entrada = int(input('Ingrese palabra: '))
+        num = num + 1
+        suma = suma + entrada
+        media = suma / num
+        if entrada != 'fin':
+            continue
+        if entrada == 'fin':
+            break
+except ValueError:
+    print('Introduzca otro numero si desea continuar.')
+    print('A continuacion se detalla lo ingresado')
+    print('El contador llego a:', num)
+    print('La suma total es:', suma,)
+    print('La media es:', int(media))        
+
+
+ 
