@@ -57,27 +57,27 @@ class Gato:
     nombre = ""
 
     def set_nombre(self, name):
-        
+       self.nombre = name 
     
     def getNombre(self):
-        
+      return self.nombre    
 
     def getEnergia(self):
-        
+      return self.energia       
 
-    def correr(self, tiempo):
-        
+    # def correr(self, tiempo):        
 
     def saltar(self):
-        
+      if self.getEnergia() >= 3:
+        self.energia = self.energia - 3
+        print('Soy', self.getNombre(), ', salte y gaste 3 unidades')        
 
-    def mostrarInformacion(self):
-        
+    # def mostrarInformacion(self):        
 
     def comer(self,comida):
-        
+      self.energia = comida        
 
-    def obtenerSaltosQuePuedeDar(self):
+    # def obtenerSaltosQuePuedeDar(self):
         
 
 
