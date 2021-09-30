@@ -16,7 +16,7 @@ class Gato:
         if self.getEnergia() < tiempo:
             print("Soy " + self.getNombre() + ", no tengo energia " + str(tiempo) + " minutos")
         else:
-            print("Soy " + self.getNombre() + ", corri " + str(tiempo) + " minutos")
+            print("Soy " + self.getNombre() + ", corri", str(tiempo) + " minutos")
             self.energia -= tiempo
 
     def saltar(self):

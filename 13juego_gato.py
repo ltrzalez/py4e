@@ -65,19 +65,34 @@ class Gato:
     def getEnergia(self):
       return self.energia       
 
-    # def correr(self, tiempo):        
+    def correr(self, tiempo):
+      if tiempo <= self.getEnergia():
+        self.energia -= tiempo
+        print('Soy', self.getNombre(), 'y corrio', tiempo)
+      else:
+        print('No tengo energias para correr')          
 
     def saltar(self):
       if self.getEnergia() >= 3:
         self.energia = self.energia - 3
-        print('Soy', self.getNombre(), ', salte y gaste 3 unidades')        
+        print('Soy', self.getNombre(), ', salte y gaste 3 unidades')
+      else:
+        print('Soy', self.getNombre(), 'y no tengo energia para saltar')        
 
-    # def mostrarInformacion(self):        
+    def mostrarInformacion(self):
+        # print('Hola soy', self.getNombre(), 'y me quedan', self.getEnergia())      
+        print(f"soy {self.nombre} y me quedan {self.energia}")      
 
     def comer(self,comida):
-      self.energia = comida        
+      self.energia = comida
 
-    # def obtenerSaltosQuePuedeDar(self):
+    def obtenerSaltosQuePuedeDar(self):
+      # return self.getEnergia // 3
+      obtener = self.getEnergia() // 3
+      return obtener
+
+
+      
         
 
 
@@ -86,20 +101,21 @@ def main():
     nombre = input("Ingrese el nombre del gato \n")
     gato = Gato()
     gato.set_nombre(nombre)
+    
 
     operacion = int(input("Elegir opcion (1. Correr, 2.Saltar, 3. Comer, 4.Salir)"))
     
 
     while operacion >= 1 and operacion <= 3:
         if operacion == 1:
-            tiempo_a_correr = input("Ingrese el tiempo en minutos")
-            gato.correr(int(tiempo_a_correr))
+            tiempo_a_correr = int(input("Ingrese el tiempo en minutos"))
+            gato.correr(tiempo_a_correr)
             pass
         elif operacion == 2:
             gato.saltar()
             pass
         elif operacion == 3:
-            cantidad_de_comida = input("ingrese la cantidad de unidades")
+            cantidad_de_comida = int(input("ingrese la cantidad de unidades"))
             gato.comer(cantidad_de_comida)
             pass
         operacion = int(input("Elegir opcion (1. Correr, 2.Saltar, 3. Comer, 4.Salir)"))
